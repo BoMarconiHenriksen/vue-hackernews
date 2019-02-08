@@ -32,3 +32,22 @@ Run the development server:
 ```
 npm run serve
 ```
+
+## Running the Hacker News production build locally
+```
+npm install http-server -g
+```
+
+```
+npm run build
+```
+
+cd into the dist folder.
+
+```
+http-server
+or
+http-server –p 1234
+
+http://localhost:8000.
+```
