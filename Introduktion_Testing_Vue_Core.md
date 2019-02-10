@@ -11,16 +11,16 @@ En test, der åbner en browser, hvor testen kan trykke på forskellige funktiona
 10% af dine tests.  
 
 ´´´
-function testCalculator(browser) {
-    browser     
-        .url('http://localhost:8080')          // 1     
-        .click('#button-1')                    // 2     
-        .click('#button-plus')     
-        .click('#button-1')     
-        .click('#button-equal')     
-        .assert.containsText('#result', '2')   // 3     
-        .end(); 
-}
+function testCalculator(browser) {  
+    browser      
+        .url('http://localhost:8080')          // 1      
+        .click('#button-1')                    // 2      
+        .click('#button-plus')      
+        .click('#button-1')      
+        .click('#button-equal')  
+        .assert.containsText('#result', '2')   // 3   
+        .end();  
+}  
 ´´´
 1. Naviger browseren til siden.  
 2. Trykker på lommeregneren.  
@@ -42,20 +42,20 @@ Unit test er funktioner, der kalder funktioner i din kode, og tjekker(asert) at 
 60% af dine tests.  
 
 ´´´
-// sum.js 
-export default function sum(a, b) {              // 1   
-    return a + b 
-} 
+// sum.js  
+export default function sum(a, b) {              // 1    
+    return a + b  
+}  
 
-// sum.spec.js 
-import sum  from '../sum'                        // 2 
+// sum.spec.js  
+import sum  from '../sum'                        // 2  
 function testSum() {   
-    if (sum(1,1) !== 2) {                        // 3     
-    throw new Error('sum(1,1) did not return 2')   
-    } 
-} 
+    if (sum(1,1) !== 2) {                        // 3      
+    throw new Error('sum(1,1) did not return 2')    
+    }  
+}  
 
-testSum()                                       // 4
+testSum()                                       // 4  
 ´´´
 1. Funktionen, der skal testes.  
 2. Importer sum funktionen ind i test filen.  
@@ -77,10 +77,3 @@ Sikre at en applikation render korrekt efter ændringer i koden.
 
 Vi kommer til at se på Jest testing frameworket, der kan sammenligne DOM output fra komponenter.  
 30% af dine tests.  
-
-
-
-
-
-
-
