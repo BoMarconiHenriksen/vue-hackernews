@@ -18,7 +18,7 @@ function testCalculator(browser) {
         .click('#button-plus')      
         .click('#button-1')      
         .click('#button-equal')  
-        .assert.containsText('#result', '2')   // 3   
+        .assert.containsText('#result', '2')   // 3  
         .end();  
 }  
 ´´´
