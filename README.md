@@ -26,7 +26,7 @@ I scripts i package.json opdater test til både at køre linting og unit tests.
 "test": "npm run lint && npm run test:unit"
 ```
 ##### Kør unit tests
-´´´
+```
 npm run test:unit
 ```
 ##### Globs
